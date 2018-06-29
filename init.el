@@ -7,6 +7,9 @@
 You should not put any user code in this function besides modifying the variable
 values."
   (setq-default
+   indent-tabs-mode t
+   default-tab-width 4
+
    ;; Base distribution to use. This is a layer contained in the directory
    ;; `+distribution'. For now available distributions are `spacemacs-base'
    ;; or `spacemacs'. (default 'spacemacs)
@@ -30,7 +33,9 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(markdown
+   '(python
+     javascript
+     markdown
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -358,7 +363,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (magit-svn hydra helm helm-core evil goto-chg undo-tree projectile pkg-info epl counsel swiper ivy bind-key packed async avy popup ggtags reveal-in-osx-finder pbcopy osx-trash osx-dictionary launchctl disaster company-c-headers cmake-mode clang-format unfill smeargle orgit org-projectile org-category-capture s org-present org-plus-contrib org-pomodoro alert log4e gntp org-mime org-download mwim magit-gitflow htmlize gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link fuzzy evil-magit magit magit-popup git-commit ghub let-alist with-editor dash company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete which-key wgrep use-package smex pcre2el macrostep ivy-hydra helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav diminish counsel-projectile bind-map auto-compile ace-window))))
+    (yapfify pyvenv pytest pyenv-mode py-isort pippel pipenv pip-requirements live-py-mode importmagic epc ctable concurrent deferred cython-mode company-anaconda anaconda-mode pythonic hydra helm helm-core evil goto-chg undo-tree projectile pkg-info epl counsel swiper ivy bind-key packed async avy popup ggtags reveal-in-osx-finder pbcopy osx-trash osx-dictionary launchctl disaster company-c-headers cmake-mode clang-format unfill smeargle orgit org-projectile org-category-capture s org-present org-plus-contrib org-pomodoro alert log4e gntp org-mime org-download mwim magit-gitflow htmlize gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link fuzzy evil-magit magit magit-popup git-commit ghub let-alist with-editor dash company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete which-key wgrep use-package smex pcre2el macrostep ivy-hydra helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav diminish counsel-projectile bind-map auto-compile ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
