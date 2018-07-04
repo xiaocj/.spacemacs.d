@@ -7,8 +7,9 @@
 You should not put any user code in this function besides modifying the variable
 values."
   (setq-default
-   indent-tabs-mode t
-   default-tab-width 4
+   c-default-style "bsd"
+   c-basic-offset 4
+   tab-width 4
 
    ;; Base distribution to use. This is a layer contained in the directory
    ;; `+distribution'. For now available distributions are `spacemacs-base'
